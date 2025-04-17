@@ -17,7 +17,7 @@ page = st.sidebar.radio("Go to:", ["Home", "About", "Disease Recognition", "Live
 # **Load Trained Model**
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('vgg161model.keras')
+    model = tf.keras.models.load_model('plant_disease_vgg161.keras')
     model.make_predict_function()  # Optimize inference speed
     return model
 
