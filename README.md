@@ -1,1 +1,1 @@
-# Major-Project-main
+# Plantdiseasesdetection
