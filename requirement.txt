@@ -9,4 +9,4 @@ opencv-python
 base64
 fpdf
 time
-tensorflow
+tensorflow==2.10
