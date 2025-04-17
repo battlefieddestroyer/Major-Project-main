@@ -6,3 +6,7 @@ seaborn==0.13.0
 pandas==2.1.0
 streamlit
 opencv-python
+base64
+fpdf
+time
+tensorflow
