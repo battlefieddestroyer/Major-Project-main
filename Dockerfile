@@ -1,10 +1,10 @@
-FROM python:3.9-slim
+ROM python:3.10-slim
 
 WORKDIR /app
+COPY . /app
 
-COPY [requirement.txt](http://_vscodecontentref_/3) [requirement.txt](http://_vscodecontentref_/4)
-RUN pip install -r [requirement.txt](http://_vscodecontentref_/5)
+RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+EXPOSE 8501
 
-CMD ["python", "app.py"]
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.enableCORS=false"]
